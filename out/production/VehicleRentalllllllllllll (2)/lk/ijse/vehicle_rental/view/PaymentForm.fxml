@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehicle_rental.controller.PaymentFormController">
+   <children>
+      <ImageView fitHeight="755.0" fitWidth="1360.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/Payment.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="384.0" layoutY="278.0" prefHeight="24.0" prefWidth="74.0" style="-fx-font-size: 19;" text="Bill Id" />
+      <Label layoutX="384.0" layoutY="526.0" prefHeight="24.0" prefWidth="125.0" style="-fx-font-size: 19;" text="Total Payment" />
+      <Label layoutX="384.0" layoutY="421.0" style="-fx-font-size: 19;" text="Date" />
+      <Label layoutX="385.0" layoutY="472.0" style="-fx-font-size: 19;" text="Advance" />
+      <TextField fx:id="txtBill" layoutX="522.0" layoutY="271.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtDate" layoutX="522.0" layoutY="414.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtAdvance" layoutX="522.0" layoutY="465.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtTotal" layoutX="522.0" layoutY="519.0" style="-fx-font-size: 19;" />
+      <Button layoutX="513.0" layoutY="600.0" mnemonicParsing="false" onAction="#btnAddOnAction" style="-fx-font-size: 19; -fx-background-color: #00A79D;" text="Add" textFill="#fcf9f9" />
+      <Button layoutX="698.0" layoutY="600.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-font-size: 19; -fx-background-color: #ED1C24;" text="Delete" textFill="#f8f6f6" />
+      <JFXButton layoutX="21.0" layoutY="161.0" onAction="#btnBackOnAction" prefHeight="51.0" prefWidth="160.0" text="  " />
+      <Button layoutX="597.0" layoutY="600.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-font-size: 19; -fx-background-color: #2E3192;" text="Update" textFill="#f8f7f7" />
+      <Button layoutX="769.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="42.0" prefWidth="99.0" style="-fx-font-size: 19; -fx-background-color: #00A79D;" text="Search" />
+      <ImageView fitHeight="204.0" fitWidth="450.0" layoutX="886.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="886.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="334.0">
+         <image>
+            <Image url="@../assets/car-rental-sefa-ozel-GettyImages.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="384.0" layoutY="376.0" style="-fx-font-size: 19;" text="RegID" />
+      <TextField fx:id="txtRegID" layoutX="522.0" layoutY="369.0" style="-fx-font-size: 19;" />
+      <Label layoutX="385.0" layoutY="328.0" style="-fx-font-size: 19;" text="CusID" />
+      <TextField fx:id="txtCusID" layoutX="522.0" layoutY="321.0" style="-fx-font-size: 19;" />
+   </children>
+</AnchorPane>

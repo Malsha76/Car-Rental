@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="1000.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehicle_rental.controller.DashboardController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1920.0" layoutX="264.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/Dashboard.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="255.0" layoutY="431.0" onAction="#bookingOnAction" prefHeight="285.0" prefWidth="179.0" style="-fx-opacity: 50%;" />
+      <JFXButton layoutX="51.0" layoutY="223.0" onAction="#logoutOnAction" prefHeight="66.0" prefWidth="179.0" style="-fx-opacity: 50%;" text="  " />
+      <JFXButton layoutX="501.0" layoutY="431.0" onAction="#customerOnAction" prefHeight="285.0" prefWidth="179.0" style="-fx-opacity: 50%;" />
+      <JFXButton layoutX="746.0" layoutY="431.0" onAction="#employeeMngOnAction" prefHeight="285.0" prefWidth="179.0" style="-fx-opacity: 50%;" />
+      <JFXButton layoutX="992.0" layoutY="431.0" onAction="#vehicalMngOnAction" prefHeight="285.0" prefWidth="179.0" style="-fx-opacity: 50%;" />
+      <JFXButton layoutX="1238.0" layoutY="431.0" onAction="#paymentOnAction" prefHeight="285.0" prefWidth="179.0" style="-fx-opacity: 50%;" />
+      <JFXButton layoutX="1484.0" layoutY="431.0" onAction="#reportsOnAction" prefHeight="285.0" prefWidth="179.0" style="-fx-opacity: 50%;" />
+   </children>
+</AnchorPane>

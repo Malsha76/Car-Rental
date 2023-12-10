@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehicle_rental.controller.BookingFormController">
+   <children>
+      <ImageView fitHeight="755.0" fitWidth="1360.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/Booking.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="230.0" layoutY="562.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: #00A79D;" text="Add" textFill="#fcfcfc">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="316.0" layoutY="561.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-font-size: 19; -fx-background-color: #2E3192;" text="Update" textFill="#fffdfd" />
+      <Button layoutX="418.0" layoutY="561.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-font-size: 19; -fx-background-color: #ED1C24;" text="Delete" textFill="#fcfafa" />
+      <JFXButton layoutX="31.0" layoutY="155.0" onAction="#btnBackOnAction" prefHeight="51.0" prefWidth="160.0" text="  ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="524.0" layoutY="239.0" onAction="#btnSearchBIDOnAction" prefHeight="42.0" prefWidth="101.0" style="-fx-background-color: #00A79D;" text="Search" textFill="#1e1d1d" />
+      <JFXButton layoutX="524.0" layoutY="294.0" onAction="#btnSearchRIDOnAction" prefHeight="42.0" prefWidth="101.0" style="-fx-background-color: #00A79D;" text="Search RID" textFill="#1e1d1d" />
+      <TableView fx:id="tblBooking" layoutX="649.0" layoutY="238.0" prefHeight="344.0" prefWidth="484.0">
+        <columns>
+          <TableColumn fx:id="colBID" prefWidth="75.0" text=" Booking ID" />
+          <TableColumn fx:id="colRegid" prefWidth="75.0" text="Reg-id" />
+            <TableColumn fx:id="colCuSId" prefWidth="75.0" text="Customer Id" />
+            <TableColumn fx:id="colBoId" prefWidth="107.0" text="Booking Date" />
+            <TableColumn fx:id="colRetId" prefWidth="75.0" text="Return Date" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <GridPane layoutX="90.0" layoutY="239.0" prefHeight="285.0" prefWidth="419.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="137.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.0" minWidth="10.0" prefWidth="282.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-font-size: 19;" text="Booking Id" GridPane.rowIndex="1" />
+            <Label style="-fx-font-size: 19;" text="Reg-id" GridPane.rowIndex="2" />
+            <Label prefHeight="28.0" prefWidth="116.0" style="-fx-font-size: 19;" text="Availibility" GridPane.rowIndex="3" />
+            <Label prefHeight="28.0" prefWidth="117.0" style="-fx-font-size: 19;" text="Customer Id" GridPane.rowIndex="4" />
+            <Label style="-fx-font-size: 19;" text="Booking Date" GridPane.rowIndex="5" />
+            <Label style="-fx-font-size: 19;" text="Return Date" GridPane.rowIndex="6" />
+            <TextField fx:id="txtBookId" prefHeight="42.0" prefWidth="205.0" style="-fx-font-size: 19;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtRegID" prefHeight="42.0" prefWidth="191.0" style="-fx-font-size: 19;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtAvailability" prefHeight="42.0" prefWidth="302.0" style="-fx-font-size: 19;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtCustomerId" prefHeight="42.0" prefWidth="302.0" style="-fx-font-size: 19;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtBdate" prefHeight="42.0" prefWidth="302.0" style="-fx-font-size: 19;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="txtRetDate" prefHeight="42.0" prefWidth="302.0" style="-fx-font-size: 19;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

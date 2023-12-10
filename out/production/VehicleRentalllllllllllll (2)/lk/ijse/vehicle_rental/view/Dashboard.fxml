@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehicle_rental.controller.DashboardController">
+   <children>
+      <ImageView fitHeight="755.0" fitWidth="1360.0" layoutX="66.0" layoutY="-73.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/dash.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="249.0" layoutY="306.0" onAction="#bookingOnAction" prefHeight="200.0" prefWidth="125.0" style="-fx-opacity: 50%;" />
+      <JFXButton layoutX="36.0" layoutY="162.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="125.0" style="-fx-opacity: 50%;" text="  " />
+      <JFXButton layoutX="63.0" layoutY="347.0" onAction="#customerOnAction" prefHeight="159.0" prefWidth="125.0" style="-fx-opacity: 50%;" text="Button" />
+      <JFXButton layoutX="986.0" layoutY="354.0" onAction="#employeeMngOnAction" prefHeight="152.0" prefWidth="125.0" style="-fx-opacity: 50%;" text="Button">
+         <font>
+            <Font />
+         </font></JFXButton>
+      <JFXButton layoutX="618.0" layoutY="306.0" onAction="#vehicalMngOnAction" prefHeight="200.0" prefWidth="125.0" style="-fx-opacity: 50%;" />
+      <JFXButton layoutX="802.0" layoutY="306.0" onAction="#paymentOnAction" prefHeight="200.0" prefWidth="125.0" style="-fx-opacity: 50%;" />
+      <JFXButton layoutX="1171.0" layoutY="306.0" onAction="#reportsOnAction" prefHeight="200.0" prefWidth="125.0" style="-fx-opacity: 50%;" />
+      <JFXButton layoutX="434.0" layoutY="347.0" onAction="#packagesOnAction" prefHeight="159.0" prefWidth="125.0" style="-fx-opacity: 50%;" text="Button">
+         <font>
+            <Font />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

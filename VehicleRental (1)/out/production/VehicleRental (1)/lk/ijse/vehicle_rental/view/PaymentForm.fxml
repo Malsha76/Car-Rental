@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehicle_rental.controller.PaymentFormController">
+   <children>
+      <ImageView fitHeight="755.0" fitWidth="1360.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/Payment.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="378.0" layoutY="390.0" prefHeight="24.0" prefWidth="74.0" style="-fx-font-size: 19;" text="Bill Id" />
+      <Label layoutX="373.0" layoutY="526.0" prefHeight="24.0" prefWidth="125.0" style="-fx-font-size: 19;" text="Total Payment" />
+      <Label layoutX="378.0" layoutY="435.0" style="-fx-font-size: 19;" text="Date" />
+      <Label layoutX="373.0" layoutY="476.0" style="-fx-font-size: 19;" text="Advance" />
+      <TextField fx:id="txtBill" layoutX="513.0" layoutY="369.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtDate" layoutX="513.0" layoutY="414.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtAdvance" layoutX="513.0" layoutY="465.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtTotal" layoutX="513.0" layoutY="515.0" style="-fx-font-size: 19;" />
+      <Button layoutX="579.0" layoutY="588.0" mnemonicParsing="false" onAction="#btnAddOnAction" style="-fx-font-size: 19;" text="Add" />
+      <Button layoutX="652.0" layoutY="588.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-font-size: 19;" text="Cancel" />
+      <JFXButton layoutX="21.0" layoutY="161.0" onAction="#btnBackOnAction" prefHeight="51.0" prefWidth="160.0" text="  " />
+   </children>
+</AnchorPane>

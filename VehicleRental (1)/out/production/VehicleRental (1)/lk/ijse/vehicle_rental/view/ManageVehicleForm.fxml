@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vehicle_rental.controller.ManageVehicleFormController">
+   <children>
+      <ImageView fitHeight="755.0" fitWidth="1360.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-0.67254638671875" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/ManageVehical.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="427.0" layoutY="284.0" prefHeight="24.0" prefWidth="105.0" style="-fx-font-size: 19;" text="Register Id" />
+      <Label layoutX="431.0" layoutY="566.0" prefHeight="18.0" prefWidth="97.0" style="-fx-font-size: 19;" text="Insurance" />
+      <Label layoutX="427.0" layoutY="333.0" prefHeight="17.0" prefWidth="57.0" style="-fx-font-size: 19;" text="Colour" />
+      <Label layoutX="431.0" layoutY="616.0" prefHeight="24.0" prefWidth="137.0" style="-fx-font-size: 19;" text="Transmission" />
+      <Label layoutX="426.0" layoutY="448.0" style="-fx-font-size: 19;" text="Vehicle Name" />
+      <TextField fx:id="txtReg" layoutX="562.0" layoutY="277.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtColour" layoutX="562.0" layoutY="333.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtVehname" layoutX="562.0" layoutY="448.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtInsur" layoutX="562.0" layoutY="559.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtTransmi" layoutX="562.0" layoutY="616.0" style="-fx-font-size: 19;" />
+      <Button layoutX="951.0" layoutY="595.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="77.0" style="-fx-font-size: 19;" text="Add" />
+      <Button layoutX="1180.0" layoutY="595.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="42.0" prefWidth="116.0" style="-fx-font-size: 19;" text="Delete" />
+      <Label layoutX="417.0" layoutY="389.0" style="-fx-font-size: 19;" text="Vehicle Id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="429.0" layoutY="502.0" style="-fx-font-size: 19;" text="Model">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehiID" layoutX="562.0" layoutY="389.0" style="-fx-font-size: 19;" />
+      <TextField fx:id="txtModel" layoutX="562.0" layoutY="502.0" style="-fx-font-size: 19;" />
+      <Button layoutX="1057.0" layoutY="595.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-font-size: 19;" text="Update" />
+      <JFXButton layoutX="25.0" layoutY="161.0" onAction="#btnBackOnAction" prefHeight="51.0" prefWidth="160.0" text="  " />
+      <TextField fx:id="txtBookId1" layoutX="432.0" layoutY="212.0" prefHeight="34.0" prefWidth="400.0" promptText="Search" style="-fx-font-size: 19;" />
+   </children>
+</AnchorPane>
